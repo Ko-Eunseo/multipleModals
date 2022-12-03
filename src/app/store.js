@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import modalReducer from '../redux/modalSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    //여기서 리듀서를 관리한다.
+    modal: modalReducer,
   },
 });
